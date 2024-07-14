@@ -1,0 +1,26 @@
+<!--aula 2 fazendo uns comandos simples de JavaScript dentro do html
+usando o comando length para saber quantas letras tem um nome
+usando document.write em vez de window.alert
+ussando toUpperCase() e toLowerCase() para formataçao de texto -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = String(window.prompt("Qual o seu nome?"))
+        document.write(`Seu nome e <strong>${nome}</strong> e tem ${nome.length} letras<br>`)
+        document.write(`Seu nome em maiuscula fica ${nome.toUpperCase()} e em minuscula ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
